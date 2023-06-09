@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/checkout/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./smile.png">
+
+    <title>Music For You</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./create_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./create_files/form-validation.css" rel="stylesheet">
+    <style>
+      
+      @font-face {
+      font-family: 'bazzi';
+      src: url('./Bazzi.ttf') format('truetype');
+      }
+      
+      button{
+        
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <form class="form-signin" name="frmInput" action="memberWrite_e.php" method="post" enctype="multipart/form-data">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./smile.png" alt="" width="72" height="72">
+        <h2 style="font-family: 'bazzi';">&nbsp;회원가입</h2>
+        <p class="lead" style="font-family: 'bazzi'; color:grey">하루감정 이용을 위해 계정을 생성해주세요.</p>
+      </div>
+<center>   
+        <div class="col-md-8 order-md-1"> 
+          <form class="needs-validation" novalidate="" name="frmInput" action="memberWrite_e.php" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="name" class="form-label" style="font-family: 'bazzi'; font-size: 20px;" >이름</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="" value="" required>
+                <div class="invalid-feedback" style="font-family: 'bazzi';">
+                  이름을 입력해주세요.
+                </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email"style="font-family: 'bazzi'; font-size: 20px;">Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback" style="font-family: 'bazzi';">
+                이메일을 입력해주세요.
+              </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="pw1" class="form-label" style="font-family: 'bazzi'; font-size: 20px;">비밀번호</label>
+                <input type="password" class="form-control" name="pw1" id="pw1" placeholder="" value="" required>
+                <div class="invalid-feedback" style="font-family: 'bazzi';">
+                  비밀번호를 입력해주세요.
+                </div>
+            </div>
+
+          <div class="mb-3">
+            <label for="nickname" class="form-label" style="font-family: 'bazzi'; font-size: 20px;">닉네임</label>
+            <input type="text" class="form-control" name="nickname" id="nickname" placeholder="" value="" required>
+            <div class="invalid-feedback" style="font-family: 'bazzi';">
+              닉네임을 입력해주세요.
+            </div>
+        </div>
+          <br>
+            <hr class="mb-4">
+            <br>
+            <button class="btn btn-primary btn-lg btn-block" type="submit" 
+            style = 'background-color: #FFBF00; border-color: goldenrod;  font-family: "bazzi";'">회원가입</button>
+          </form>
+        </div>
+ </center>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 20190987 서지원</p>
+        
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./create_files/jquery-3.2.1.slim.min.js.다운로드" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./create_files/popper.min.js.다운로드"></script>
+    <script src="./create_files/bootstrap.min.js.다운로드"></script>
+    <script src="./create_files/holder.min.js.다운로드"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  
+
+</body></html>

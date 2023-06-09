@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./smile.png">
+
+    <title>하루감정</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./sign_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./sign_files/signin.css" rel="stylesheet">
+    <style>
+      .btn btn-lg btn-primary btn-block{
+        background-color: #FFBF00;
+        color: black;
+        border-color: black;
+      }
+      @font-face {
+      font-family: 'bazzi';
+      src: url('./Bazzi.ttf') format('truetype');
+      }
+    </style>
+  </head>
+
+  <body class="text-center" style="background-color:#FFFAE6;">
+    <form class="form-signin" name="frmInput" action="logincheck_e.php" method="post" enctype="multipart/form-data">
+      <img class="mb-4" src="./smile.png" alt="" width="90" height="90" style="margin-bottom: 30px;">
+      <h1 class="h2 mb-3 font-weight-normal" style='font-weight: bold; font-family: "bazzi";''>하루감정</h1>
+      <h3 class="h5 mb-3 font-weight-normal" style='font-family: "bazzi"'>로그인</h3>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="id" name="id" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only" >Password</label>
+      <input type="password" id="pw" name="pw" class="form-control" placeholder="Password" required="">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" > Remember me
+        </label>
+      </div><br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" 
+      style = 'background-color: #FFBF00; border-color: goldenrod;  font-family: "bazzi";'>로그인</button>
+      <button class="btn btn-lg btn-primary btn-block" onclick="location.href='create_e.html'"" 
+      style = 'background-color: #FFBF00; border-color: goldenrod;  font-family: "bazzi";'>회원가입</button>
+      <p class="mt-5 mb-3 text-muted">© 20190987 서지원</p>
+    </form>
+  
+
+</body></html>

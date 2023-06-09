@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./smile.png">
+
+    <title>하루감정</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./sign_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./sign_files/signin.css" rel="stylesheet">
+    <style>
+      .btn btn-lg btn-primary btn-block{
+        background-color: #FFBF00;
+        color: black;
+        border-color: black;
+      }
+      @font-face {
+      font-family: 'bazzi';
+      src: url('./Bazzi.ttf') format('truetype');
+      }
+      
+      .dropdown-menu {
+  margin: 4rem auto;
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  background-color: var(--bs-white);
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+  background-color: white;
+  margin: 1.5px;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: rgba(0, 0, 0, .05);
+}
+.cal-btn[disabled] {
+  border: 0;
+  opacity: .5;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+
+.w-220px {
+  width: 220px;
+}
+
+.w-280px {
+  width: 280px;
+}
+
+.w-340px {
+  width: 340px;
+}
+
+.w-600px {
+  width: 600px;
+}
+    </style>
+  </head>
+
+  <body class="text-center" style="background-color:#FFFAE6;">
+
+    <div class="dropdown-menu d-block position-static p-2 shadow rounded-3 w-340px" style="border-radius: 10px;">
+    <div class="d-grid gap-1">
+
+      <div class="cal">
+
+        <div class="cal-month">
+          
+          <button class="btn cal-btn" type="button">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </button>
+          
+          <strong class="cal-month-name" style="font-family: 'bazzi'; font-size: larger;">JUNE</strong>
+          <select class="form-select cal-month-name d-none">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option selected="" value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <button class="btn cal-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="cal-weekdays text-muted">
+          <div class="cal-weekday" style="font-family: 'bazzi';">일</div>
+          <div class="cal-weekday" style="font-family: 'bazzi';">월</div>
+          <div class="cal-weekday" style="font-family: 'bazzi';">화</div>
+          <div class="cal-weekday" style="font-family: 'bazzi';">수</div>
+          <div class="cal-weekday" style="font-family: 'bazzi';">목</div>
+          <div class="cal-weekday" style="font-family: 'bazzi';">금</div>
+          <div class="cal-weekday" style="font-family: 'bazzi'; " >토</div>
+        </div>
+        <div class="cal-days">
+          <button class="btn cal-btn" disabled="" type="button">30</button>
+          <button class="btn cal-btn" disabled="" type="button">31</button>
+  
+          <button class="btn cal-btn" type="button">1</button>
+          <button class="btn cal-btn" type="button">2</button>
+          <button class="btn cal-btn" type="button">3</button>
+          <button class="btn cal-btn" type="button">4</button>
+          <button class="btn cal-btn" type="button">5</button>
+          <button class="btn cal-btn" type="button">6</button>
+          <button class="btn cal-btn" type="button" onclick="location.href='select_e.html'">7</button>
+  
+          <button class="btn cal-btn" type="button">8</button>
+          <button class="btn cal-btn" type="button">9</button>
+          <button class="btn cal-btn" type="button">10</button>
+          <button class="btn cal-btn" type="button">11</button>
+          <button class="btn cal-btn" type="button">12</button>
+          <button class="btn cal-btn" type="button">13</button>
+          <button class="btn cal-btn" type="button" >14</button>
+  
+          <button class="btn cal-btn" type="button">15</button>
+          <button class="btn cal-btn" type="button">16</button>
+          <button class="btn cal-btn" type="button">17</button>
+          <button class="btn cal-btn" type="button">18</button>
+          <button class="btn cal-btn" type="button">19</button>
+          <button class="btn cal-btn" type="button">20</button>
+          <button class="btn cal-btn" type="button">21</button>
+  
+          <button class="btn cal-btn" type="button">22</button>
+          <button class="btn cal-btn" type="button">23</button>
+          <button class="btn cal-btn" type="button">24</button>
+          <button class="btn cal-btn" type="button">25</button>
+          <button class="btn cal-btn" type="button">26</button>
+          <button class="btn cal-btn" type="button">27</button>
+          <button class="btn cal-btn" type="button">28</button>
+  
+          <button class="btn cal-btn" type="button">29</button>
+          <button class="btn cal-btn" type="button">30</button>
+          <button class="btn cal-btn" type="button">31</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body></html>

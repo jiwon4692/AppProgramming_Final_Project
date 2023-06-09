@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./smile.png">
+
+    <title>하루감정</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./sign_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./sign_files/signin.css" rel="stylesheet">
+    <style>
+      .btn btn-lg btn-primary btn-block{
+        background-color: #FFBF00;
+        color: black;
+        border-color: black;
+      }
+      @font-face {
+      font-family: 'bazzi';
+      src: url('./Bazzi.ttf') format('truetype');
+      }
+      
+      .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid-item {
+      padding: 30px; 
+      margin-top: 30px;
+      padding: 10px;
+      text-align: center;
+    }
+      button {
+        background-color: #FFFAE6;
+        border-color: #FFFAE6;
+      }
+    </style>
+  </head>
+
+  <body class="text-center" style="background-color:#FFFAE6;">
+    <form class="form-signin" name="frmInput" action="" method="post" enctype="multipart/form-data">
+
+      <h3 class="h5 mb-3 font-weight-normal" style='font-family: "bazzi"; color: grey'>2023년 6월 7일 </h3>
+      <h1 class="h2 mb-3 font-weight-normal" style='font-weight: bold; font-family: "bazzi";''>오늘의 감정을 골라보세요</h1>
+        
+        <div class="grid-container">
+          <div class="grid-item">
+            <button class="btn" id="btn" type="button" style="padding:0px; margin:0px;"><img class="img_btn" src="smile.png"></button>
+          </div>
+          <div class="grid-item">
+            <button class="btn" id="btn" type="button" style="padding:0px; margin:0px;"><img class="img_btn" src="sun.png"></button>
+          </div>
+          <div class="grid-item" style="padding: 30px; margin-top: 30px;">
+            <button class="btn" id="btn" type="button" style="padding:0px; margin:0px;"><img class="img_btn" src="heart.png"></button>
+          </div>
+          <div class="grid-item" style="padding: 30px; margin-top: 30px;">
+            <button class="btn" id="btn" type="button" style="padding:0px; margin:0px;" onclick="location.href='happy_note.html'">
+              <img class="img_btn" src="happy.png">
+            </button>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="button" 
+        style = 'background-color: #FFBF00; border-color: goldenrod;  font-family: "bazzi"; margin-top: 50px;'
+        onclick="location.href='main_calendar.html'">돌아가기</button>
+      <div class="checkbox mb-3">
+      </div><br>
+      <p class="mt-5 mb-3 text-muted">© 20190987 서지원</p>
+    </form>
+  
+
+</body></html>
